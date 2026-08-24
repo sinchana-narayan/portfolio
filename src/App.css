@@ -1,0 +1,1419 @@
+
+/* =========================================
+   GOOGLE FONTS
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bricolage+Grotesque:opsz@12..96&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Pacifico&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+/* =========================================
+   GLOBAL STYLES
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================
+   THEME CONTAINERS
+========================================= */
+
+.light-theme {
+    background-color: white;
+    color: black;
+    min-height: 100vh;
+}
+
+.dark-theme {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 30px;
+}
+
+.navbar img {
+    object-fit: contain;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 15px;
+
+    color: rgb(255, 254, 254);
+
+    transition: color 0.2s;
+
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-links a:hover {
+    color: aqua;
+}
+
+
+/* =========================================
+   THEME TOGGLE BUTTON
+========================================= */
+
+.theme-toggle {
+    border: none;
+    background: transparent;
+
+    font-size: 24px;
+    cursor: pointer;
+
+    padding: 5px 10px;
+}
+
+
+/* =========================================
+   GENERAL BUTTON
+========================================= */
+
+.btn {
+    border: 2px solid transparent;
+
+    text-decoration: none;
+
+    padding: 7px;
+
+    border-radius: 8px;
+
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+
+    display: inline-block;
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero-section {
+    padding: 190px;
+
+    text-align: center;
+
+    background: url("https://i.pinimg.com/1200x/8e/8f/13/8e8f1351de6cce72cb04f18339900b55.jpg");
+
+    background-repeat: no-repeat;
+
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+
+    animation: fadeInUp 0.8s ease;
+}
+
+.hero-section h1 {
+    font-family: "Dancing Script", cursive;
+
+    font-optical-sizing: auto;
+
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 80px;
+
+    color: black;
+
+    animation: fadeInUp 0.8s ease;
+}
+
+.hero-title {
+    animation: fadeInUp 0.8s ease;
+}
+
+.tagline {
+    text-align: center;
+
+    animation: fadeInUp 1s ease;
+
+    font-family: "Philosopher", sans-serif;
+
+    font-weight: 700;
+    font-style: normal;
+
+    color: rgb(36, 36, 36);
+
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    animation: fadeInUp 1.2s ease;
+}
+
+
+/* =========================================
+   HERO BUTTONS
+========================================= */
+
+.btn-primary {
+    background-color: transparent;
+    color: black;
+
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: black;
+    color: white;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: black;
+
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background: black;
+    color: white;
+}
+
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes fadeInUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-section {
+
+    background: url("https://i.pinimg.com/1200x/43/18/9b/43189b04bc817001145c5f9d6d4011d1.jpg");
+
+    background-repeat: no-repeat;
+
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+
+    padding: 100px;
+
+    animation: fadeInUp 1.2s ease;
+}
+
+.about-section h2 {
+
+    font-family: "Cinzel Decorative", serif;
+
+    font-weight: 700;
+    font-style: normal;
+
+    margin-bottom: 0;
+
+    font-size: 25px;
+
+    color: black;
+}
+
+.about-content {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 40px;
+
+    margin-top: 30px;
+}
+
+.profile-figure {
+    text-align: center;
+}
+
+.profile-figure img {
+
+    height: 380px;
+    width: 370px;
+
+    object-fit: contain;
+
+    margin-bottom: 0;
+}
+
+.about-text {
+
+    padding-top: 80px;
+
+    font-family: "Dancing Script", cursive;
+
+    font-optical-sizing: auto;
+
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 30px;
+
+    color: black;
+
+    margin-top: 0;
+
+    max-width: 600px;
+}
+
+figcaption {
+
+    font-family: "Cinzel Decorative", serif;
+
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 15px;
+
+    margin-top: 10px;
+
+    color: rgb(36, 1, 1);
+}
+
+/* =========================================
+   SKILLS SECTION
+========================================= */
+
+.skills-section {
+    background: url("https://i.pinimg.com/1200x/f6/7b/39/f67b39015118b45e85b24a6a91972a93.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+
+    text-align: center;
+
+    padding: 80px 30px;
+
+    overflow: hidden;
+}
+
+.skills-section h2 {
+    font-family: "Cinzel Decorative", serif;
+
+    font-weight: bold;
+    font-style: normal;
+
+    font-size: 30px;
+
+    color: black;
+
+    margin-bottom: 40px;
+
+    animation: fadeInUp 0.8s ease;
+}
+
+
+/* =========================================
+   SKILLS GRID
+========================================= */
+
+.skills-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+
+    gap: 25px;
+
+    width: 100%;
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    justify-items: center;
+    align-items: center;
+
+    animation: fadeInUp 0.8s ease;
+}
+
+
+/* =========================================
+   SKILL BUTTON
+========================================= */
+
+.skill-button {
+
+    width: 135px;
+    height: 135px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 15px;
+
+    background-color: rgba(255, 255, 255, 0.65);
+
+    border: 2px solid transparent;
+
+    border-radius: 15px;
+
+    cursor: default;
+
+    transition:
+        transform 0.3s ease,
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+
+    /* IMPORTANT */
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   SKILL LOGOS
+========================================= */
+
+.skill-button img {
+
+    width: 60px;
+    height: 60px;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =========================================
+   SKILL NAME
+========================================= */
+
+.skill-button span {
+
+    font-family: "Philosopher", sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    color: black;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.skill-button:hover {
+
+    transform: translateY(-7px);
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    border-color: black;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   DARK MODE SKILLS
+========================================= */
+
+.dark-theme .skills-section {
+
+    background: url("https://i.pinimg.com/1200x/7a/75/53/7a7553a3de77ad770570cffadf9149ae.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+.dark-theme .skills-section h2 {
+    color: white;
+}
+
+.dark-theme .skill-button {
+
+    background-color: rgba(50, 50, 50, 0.70);
+
+    border-color: transparent;
+}
+
+.dark-theme .skill-button span {
+    color: white;
+}
+
+.dark-theme .skill-button:hover {
+
+    background-color: rgba(20, 20, 20, 0.90);
+
+    border-color: white;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .skills-section {
+        padding: 70px 25px;
+    }
+
+    .skills-grid {
+
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        gap: 20px;
+
+        max-width: 550px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .skills-section {
+
+        width: 100%;
+
+        padding: 60px 15px;
+
+        overflow: hidden;
+    }
+
+    .skills-section h2 {
+
+        font-size: 24px;
+
+        margin-bottom: 30px;
+    }
+
+    .skills-grid {
+
+        /* EXACTLY TWO BUTTONS PER ROW */
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 15px;
+
+        width: 100%;
+
+        max-width: 320px;
+
+        margin: 0 auto;
+    }
+
+    .skill-button {
+
+        width: 135px;
+        height: 135px;
+
+        padding: 12px;
+    }
+
+    .skill-button img {
+
+        width: 55px;
+        height: 55px;
+    }
+
+    .skill-button span {
+
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 360px) {
+
+    .skills-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .skills-grid {
+
+        max-width: 290px;
+
+        gap: 10px;
+    }
+
+    .skill-button {
+
+        width: 125px;
+        height: 125px;
+    }
+
+    .skill-button img {
+
+        width: 50px;
+        height: 50px;
+    }
+
+    .skill-button span {
+        font-size: 13px;
+    }
+
+}
+
+/* =========================================
+   PROJECTS SECTION
+========================================= */
+
+.project-section {
+
+    background: url("https://i.pinimg.com/1200x/6c/9c/5b/6c9c5b89ab2cb44b15d1e0d0cf6b672d.jpg");
+
+    background-repeat: no-repeat;
+
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+
+    animation: fadeInUp 0.8s ease;
+
+    padding: 80px;
+}
+
+.project-section h2 {
+
+    text-align: center;
+
+    font-family: "Cinzel Decorative", serif;
+
+    font-weight: bold;
+
+    font-style: normal;
+
+    font-size: 30px;
+
+    color: black;
+
+    margin-bottom: 50px;
+}
+
+.project-grid {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+.project-card {
+
+    gap: 10px;
+
+    background-color: rgba(249, 204, 211, 0.556);
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    max-width: 450px;
+
+    transition: 0.3s;
+}
+
+.project-card img {
+
+    height: 300px;
+
+    width: 400px;
+
+    max-width: 100%;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+}
+
+.project-card:hover {
+
+    border: 2px solid black;
+
+    background-color: transparent;
+
+    border-radius: 10px;
+}
+
+.project-card h3 {
+
+    color: brown;
+
+    font-family: "Playfair Display", serif;
+
+    font-optical-sizing: auto;
+
+    font-weight: bold;
+
+    font-style: normal;
+
+    font-size: 20px;
+
+    margin-top: 15px;
+}
+
+.project-card p {
+
+    color: rgb(42, 4, 4);
+
+    font-family: "Bricolage Grotesque", sans-serif;
+
+    font-optical-sizing: auto;
+
+    font-weight: 400;
+
+    font-style: normal;
+
+    font-variation-settings:
+        "wdth" 100;
+
+    margin-top: 10px;
+
+    line-height: 1.5;
+}
+
+.project-tags {
+
+    color: rgb(225, 56, 5);
+
+    margin-top: 15px;
+
+    margin-bottom: 20px;
+}
+
+.tag {
+    margin: 0 5px;
+}
+
+.project-card h3:hover {
+    color: rgb(15, 15, 15);
+}
+
+
+/* =========================================
+   PROJECT BUTTONS
+========================================= */
+
+.project-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.button {
+
+    color: rgb(2, 2, 32);
+
+    text-decoration: none;
+
+    padding: 5px;
+
+    border-radius: 8px;
+
+    background-color: transparent;
+
+    transition: 0.2s;
+}
+
+.button:hover {
+    color: red;
+}
+
+
+/* =========================================
+   CONTACT SECTION
+========================================= */
+
+.contact-section {
+
+    background: url("https://i.pinimg.com/1200x/f6/7b/39/f67b39015118b45e85b24a6a91972a93.jpg");
+
+    background-repeat: no-repeat;
+
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+
+    min-height: 70vh;
+
+    padding: 80px;
+}
+
+.contact-section h2 {
+
+    font-family: "Cinzel Decorative", serif;
+
+    font-weight: bold;
+
+    font-style: normal;
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.form-group {
+
+    margin-bottom: 20px;
+
+    font-family: "Playfair Display", serif;
+
+    font-optical-sizing: auto;
+
+    font-weight: bold;
+
+    font-style: normal;
+}
+
+.form-group label {
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+    color: rgb(49, 2, 2);
+
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+
+    width: 300px;
+
+    max-width: 100%;
+
+    padding: 14px;
+
+    border: 2px solid black;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-family: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+
+    outline: none;
+
+    border-color: gray;
+}
+
+
+/* Contact form */
+
+.contact-section form {
+
+    max-width: 600px;
+
+    margin: auto;
+}
+
+.submit {
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    background-color: white;
+
+    border: 1px solid gray;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.submit:hover {
+
+    background-color: rgb(0, 0, 0);
+
+    color: white;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    background-color: white;
+
+    padding: 25px;
+
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer nav {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+footer a {
+
+    text-decoration: none;
+
+    color: black;
+
+    transition: 0.2s;
+}
+
+footer a:hover {
+    color: aqua;
+}
+
+
+/* =========================================
+   DARK THEME
+========================================= */
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+
+    background-color: black;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px 30px;
+}
+
+
+/* Navigation links */
+
+.nav-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: color 0.2s;
+
+    font-family: "Cinzel Decorative", serif;
+
+    font-weight: 400;
+
+    font-style: normal;
+}
+
+
+/* Hover */
+
+.nav-links a:hover {
+
+    color: aqua;
+}
+
+.dark-theme .navbar {
+
+    background-color: black;
+
+    color: white;
+}
+
+.dark-theme .nav-links a {
+
+    color: white;
+}
+
+.dark-theme .nav-links a:hover {
+
+    color: aqua;
+}
+
+.dark-theme .nav-links a:hover {
+    color: aqua;
+}
+
+
+/* -----------------------------------------
+   DARK HERO
+----------------------------------------- */
+
+.dark-theme .hero-section {
+
+    background: url("https://i.pinimg.com/736x/4f/9d/74/4f9d749ee4b8f28e66e4c5c80517f1da.jpg");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.dark-theme .hero-section h1 {
+    color: white;
+}
+
+.dark-theme .tagline {
+    color: rgb(192, 188, 188);
+}
+
+.dark-theme .btn-primary {
+
+    background-color: transparent;
+
+    color: rgb(241, 153, 153);
+}
+
+.dark-theme .btn-primary:hover {
+
+    background-color: rgb(0, 0, 0);
+
+    color: rgb(241, 153, 153);
+}
+
+.dark-theme .btn-secondary {
+
+    background-color: transparent;
+
+    color: rgb(241, 153, 153);
+}
+
+.dark-theme .btn-secondary:hover {
+
+    background-color: black;
+
+    color: rgb(241, 153, 153);
+}
+
+
+/* -----------------------------------------
+   DARK ABOUT
+----------------------------------------- */
+
+.dark-theme .about-section {
+
+    background: url("https://i.pinimg.com/1200x/df/78/af/df78af5e39d635f212a439cec6149c42.jpg");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+}
+
+.dark-theme .about-section h2 {
+    color: white;
+}
+
+.dark-theme .about-text {
+    color: white;
+}
+
+.dark-theme figcaption {
+    color: beige;
+}
+
+
+/* -----------------------------------------
+   DARK SKILLS
+----------------------------------------- */
+
+.dark-theme .skills-section {
+
+    background: url("https://i.pinimg.com/1200x/7a/75/53/7a7553a3de77ad770570cffadf9149ae.jpg");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center;
+
+    text-align: center;
+}
+
+.dark-theme .skills-section h2 {
+    color: white;
+}
+
+
+/* -----------------------------------------
+   DARK PROJECTS
+----------------------------------------- */
+
+.dark-theme .project-section {
+
+    background: url("https://i.pinimg.com/736x/c6/13/7e/c6137e506f7f5bfcf4e12c2212c3318a.jpg");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center;
+
+    animation: fadeInUp 0.8s ease;
+}
+
+.dark-theme .project-section h2 {
+    color: white;
+}
+
+.dark-theme .project-card {
+
+    background-color: rgba(85, 84, 84, 0.532);
+
+    border-color: rgb(8, 9, 9);
+}
+
+.dark-theme .project-card:hover {
+
+    background-color: transparent;
+
+    border-color: black;
+}
+
+.dark-theme .button:hover {
+    color: black;
+}
+
+.dark-theme .project-card h3 {
+    color: beige;
+}
+
+.dark-theme .project-card p {
+    color: lightpink;
+}
+
+.dark-theme .project-tags {
+    color: rgb(241, 122, 122);
+}
+
+.dark-theme .project-grid a {
+    color: white;
+}
+
+
+/* -----------------------------------------
+   DARK CONTACT
+----------------------------------------- */
+
+.dark-theme .contact-section {
+
+    background: url("https://i.pinimg.com/1200x/7a/5e/8e/7a5e8efa4d7644e054fb4e4517c8bf00.jpg");
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    background-position: center;
+
+    min-height: 70vh;
+}
+
+.dark-theme .contact-section h2 {
+    color: white;
+}
+
+.dark-theme .form-group label {
+    color: white;
+}
+
+.dark-theme .form-group input,
+.dark-theme .form-group textarea {
+
+    background-color: azure;
+
+    color: darkcyan;
+
+    border-color: black;
+}
+
+.dark-theme .form-group input:focus,
+.dark-theme .form-group textarea:focus {
+
+    border-color: gray;
+}
+
+.dark-theme .form-group input:hover,
+.dark-theme .form-group textarea:hover {
+
+    border-color: black;
+}
+
+
+/* -----------------------------------------
+   DARK FOOTER
+----------------------------------------- */
+
+.dark-theme footer {
+
+    background-color: black;
+}
+
+.dark-theme footer p {
+    color: white;
+}
+
+.dark-theme footer a {
+
+    color: darkcyan;
+
+    border-color: darkcyan;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 900px) {
+
+    .hero-section {
+        padding: 120px 30px;
+    }
+
+    .hero-section h1 {
+        font-size: 60px;
+    }
+
+    .about-section {
+        padding: 70px 30px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text {
+        padding-top: 20px;
+        font-size: 25px;
+    }
+
+    .skills-section,
+    .project-section,
+    .contact-section {
+        padding: 60px 30px;
+    }
+
+    .js-logo {
+        position: static;
+        transform: none;
+        margin-top: 30px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .nav-links {
+        gap: 3px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .theme-toggle {
+        font-size: 20px;
+    }
+
+    .hero-section {
+        padding: 100px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 45px;
+    }
+
+    .tagline {
+        font-size: 16px;
+    }
+
+    .about-section {
+        padding: 60px 20px;
+    }
+
+    .profile-figure img {
+        width: 280px;
+        height: 320px;
+    }
+
+    .about-text {
+        font-size: 22px;
+    }
+
+    .skills-section {
+        padding: 60px 20px;
+    }
+
+    .skills-grid {
+        min-height: auto;
+    }
+
+    .python-logo {
+        width: 250px;
+    }
+
+    .html-logo {
+        width: 180px;
+    }
+
+    .css-logo {
+        width: 220px;
+    }
+
+    .c-logo {
+        width: 150px;
+        margin-left: 0;
+    }
+
+    .js-logo {
+        width: 150px;
+    }
+
+    .project-section {
+        padding: 60px 20px;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-section {
+        padding: 60px 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+}
