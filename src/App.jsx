@@ -260,7 +260,7 @@ function App() {
                   Live Demo
                 </a>
 
-                <a href="#" className="button">
+                <a href="https://github.com/sinchana-narayan" className="button">
                   GitHub
                 </a>
 

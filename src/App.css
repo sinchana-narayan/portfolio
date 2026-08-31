@@ -1,15 +1,6 @@
-
-/* =========================================
-   GOOGLE FONTS
-========================================= */
-
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bricolage+Grotesque:opsz@12..96&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Pacifico&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-
-/* =========================================
-   GLOBAL STYLES
-========================================= */
-
+/* navbar */
 * {
     margin: 0;
     padding: 0;
@@ -25,11 +16,6 @@ body {
     padding: 0;
 }
 
-
-/* =========================================
-   THEME CONTAINERS
-========================================= */
-
 .light-theme {
     background-color: white;
     color: black;
@@ -41,11 +27,6 @@ body {
     color: white;
     min-height: 100vh;
 }
-
-
-/* =========================================
-   NAVBAR
-========================================= */
 
 .navbar {
     background-color: black;
@@ -86,11 +67,6 @@ body {
     color: aqua;
 }
 
-
-/* =========================================
-   THEME TOGGLE BUTTON
-========================================= */
-
 .theme-toggle {
     border: none;
     background: transparent;
@@ -100,11 +76,6 @@ body {
 
     padding: 5px 10px;
 }
-
-
-/* =========================================
-   GENERAL BUTTON
-========================================= */
 
 .btn {
     border: 2px solid transparent;
@@ -122,11 +93,7 @@ body {
     display: inline-block;
 }
 
-
-/* =========================================
-   HERO SECTION
-========================================= */
-
+/* hero section */
 .hero-section {
     padding: 190px;
 
@@ -182,11 +149,6 @@ body {
     animation: fadeInUp 1.2s ease;
 }
 
-
-/* =========================================
-   HERO BUTTONS
-========================================= */
-
 .btn-primary {
     background-color: transparent;
     color: black;
@@ -211,11 +173,6 @@ body {
     color: white;
 }
 
-
-/* =========================================
-   ANIMATION
-========================================= */
-
 @keyframes fadeInUp {
 
     from {
@@ -230,11 +187,7 @@ body {
 
 }
 
-
-/* =========================================
-   ABOUT SECTION
-========================================= */
-
+/* about section */
 .about-section {
 
     background: url("https://i.pinimg.com/1200x/43/18/9b/43189b04bc817001145c5f9d6d4011d1.jpg");
@@ -328,10 +281,7 @@ figcaption {
     color: rgb(36, 1, 1);
 }
 
-/* =========================================
-   SKILLS SECTION
-========================================= */
-
+/* skill section */
 .skills-section {
     background: url("https://i.pinimg.com/1200x/f6/7b/39/f67b39015118b45e85b24a6a91972a93.jpg");
 
@@ -363,11 +313,6 @@ figcaption {
     animation: fadeInUp 0.8s ease;
 }
 
-
-/* =========================================
-   SKILLS GRID
-========================================= */
-
 .skills-grid {
 
     display: grid;
@@ -387,11 +332,6 @@ figcaption {
 
     animation: fadeInUp 0.8s ease;
 }
-
-
-/* =========================================
-   SKILL BUTTON
-========================================= */
 
 .skill-button {
 
@@ -429,11 +369,6 @@ figcaption {
     overflow: hidden;
 }
 
-
-/* =========================================
-   SKILL LOGOS
-========================================= */
-
 .skill-button img {
 
     width: 60px;
@@ -446,11 +381,6 @@ figcaption {
 
     display: block;
 }
-
-
-/* =========================================
-   SKILL NAME
-========================================= */
 
 .skill-button span {
 
@@ -465,11 +395,6 @@ figcaption {
     white-space: nowrap;
 }
 
-
-/* =========================================
-   HOVER
-========================================= */
-
 .skill-button:hover {
 
     transform: translateY(-7px);
@@ -482,11 +407,7 @@ figcaption {
         0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-
-/* =========================================
-   DARK MODE SKILLS
-========================================= */
-
+/* skills - dark mode */
 .dark-theme .skills-section {
 
     background: url("https://i.pinimg.com/1200x/7a/75/53/7a7553a3de77ad770570cffadf9149ae.jpg");
@@ -523,11 +444,7 @@ figcaption {
         0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-
-/* =========================================
-   TABLET
-========================================= */
-
+/* big screen view */
 @media (max-width: 900px) {
 
     .skills-section {
@@ -545,11 +462,7 @@ figcaption {
 
 }
 
-
-/* =========================================
-   MOBILE
-========================================= */
-
+/* mobile view */
 @media (max-width: 600px) {
 
     .skills-section {
@@ -570,8 +483,7 @@ figcaption {
 
     .skills-grid {
 
-        /* EXACTLY TWO BUTTONS PER ROW */
-
+        /* two buttons per row */
         grid-template-columns: repeat(2, minmax(0, 1fr));
 
         gap: 15px;
@@ -604,11 +516,7 @@ figcaption {
 
 }
 
-
-/* =========================================
-   VERY SMALL PHONES
-========================================= */
-
+/* smaller screens */
 @media (max-width: 360px) {
 
     .skills-section {
@@ -641,10 +549,7 @@ figcaption {
 
 }
 
-/* =========================================
-   PROJECTS SECTION
-========================================= */
-
+/* project section */
 .project-section {
 
     background: url("https://i.pinimg.com/1200x/6c/9c/5b/6c9c5b89ab2cb44b15d1e0d0cf6b672d.jpg");
@@ -784,11 +689,6 @@ figcaption {
     color: rgb(15, 15, 15);
 }
 
-
-/* =========================================
-   PROJECT BUTTONS
-========================================= */
-
 .project-links {
 
     display: flex;
@@ -817,11 +717,7 @@ figcaption {
     color: red;
 }
 
-
-/* =========================================
-   CONTACT SECTION
-========================================= */
-
+/* contact section */
 .contact-section {
 
     background: url("https://i.pinimg.com/1200x/f6/7b/39/f67b39015118b45e85b24a6a91972a93.jpg");
@@ -905,9 +801,6 @@ figcaption {
     border-color: gray;
 }
 
-
-/* Contact form */
-
 .contact-section form {
 
     max-width: 600px;
@@ -937,11 +830,7 @@ figcaption {
     color: white;
 }
 
-
-/* =========================================
-   FOOTER
-========================================= */
-
+/* footer */
 footer {
 
     background-color: white;
@@ -977,15 +866,7 @@ footer a:hover {
     color: aqua;
 }
 
-
-/* =========================================
-   DARK THEME
-========================================= */
-
-/* =========================================
-   NAVBAR
-========================================= */
-
+/* dark theme - navbar */
 .navbar {
 
     background-color: black;
@@ -1001,9 +882,7 @@ footer a:hover {
     padding: 10px 30px;
 }
 
-
-/* Navigation links */
-
+/* nav links */
 .nav-links a {
 
     color: white;
@@ -1050,11 +929,7 @@ footer a:hover {
     color: aqua;
 }
 
-
-/* -----------------------------------------
-   DARK HERO
------------------------------------------ */
-
+/* dark theme - hero section*/
 .dark-theme .hero-section {
 
     background: url("https://i.pinimg.com/736x/4f/9d/74/4f9d749ee4b8f28e66e4c5c80517f1da.jpg");
@@ -1102,11 +977,7 @@ footer a:hover {
     color: rgb(241, 153, 153);
 }
 
-
-/* -----------------------------------------
-   DARK ABOUT
------------------------------------------ */
-
+/* dark theme - about */
 .dark-theme .about-section {
 
     background: url("https://i.pinimg.com/1200x/df/78/af/df78af5e39d635f212a439cec6149c42.jpg");
@@ -1132,11 +1003,7 @@ footer a:hover {
     color: beige;
 }
 
-
-/* -----------------------------------------
-   DARK SKILLS
------------------------------------------ */
-
+/* dark theme - skills */
 .dark-theme .skills-section {
 
     background: url("https://i.pinimg.com/1200x/7a/75/53/7a7553a3de77ad770570cffadf9149ae.jpg");
@@ -1154,11 +1021,7 @@ footer a:hover {
     color: white;
 }
 
-
-/* -----------------------------------------
-   DARK PROJECTS
------------------------------------------ */
-
+/* dark theme - projects */
 .dark-theme .project-section {
 
     background: url("https://i.pinimg.com/736x/c6/13/7e/c6137e506f7f5bfcf4e12c2212c3318a.jpg");
@@ -1210,11 +1073,7 @@ footer a:hover {
     color: white;
 }
 
-
-/* -----------------------------------------
-   DARK CONTACT
------------------------------------------ */
-
+/* dark theme - contact section */
 .dark-theme .contact-section {
 
     background: url("https://i.pinimg.com/1200x/7a/5e/8e/7a5e8efa4d7644e054fb4e4517c8bf00.jpg");
@@ -1258,11 +1117,7 @@ footer a:hover {
     border-color: black;
 }
 
-
-/* -----------------------------------------
-   DARK FOOTER
------------------------------------------ */
-
+/* dark theme - footer */
 .dark-theme footer {
 
     background-color: black;
@@ -1278,11 +1133,6 @@ footer a:hover {
 
     border-color: darkcyan;
 }
-
-
-/* =========================================
-   RESPONSIVE DESIGN
-========================================= */
 
 @media (max-width: 900px) {
 
@@ -1415,5 +1265,4 @@ footer a:hover {
     footer {
         padding: 20px;
     }
-
 }
